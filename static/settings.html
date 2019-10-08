@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="settings.css" />
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <script src="index.js"></script>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Boss.Theme</h1>
+        <ul id="left-sidebar">
+            <li><img src="Favorites/home-icon.png" alt="" /><a href="index.html">Моя страница</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/blog-icon.png" alt="" /><a href="blog.html">Блог</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/friends-icon.png" alt="" /><a href="friends.html">Друзья</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/messages-icon.png" alt="" /><a href="no_page.html">Сообщения</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/notifications-icon.png" alt="" /><a href="no_page.html">Уведомления</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/settings-icon.png" alt="" /><a href="settings.html">Настройки</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/logout-icon.png" alt="" /><a href="login.html">Выйти</a>
+                <hr>
+            </li>
+        </ul>
+    </div>
+        <form method="post" action="" class="form">
+            <h3 class="logo">Настройки</h3>
+        
+            <p>
+                <label for="n">Фамилия:</label>
+                <input type="text" name="lastname" id="n" required>
+            </p>
+            <p>
+                <label for="sn">Имя:</label>
+                <input type="text" name="firstname" id="sn">
+            </p>
+            <p>
+                <label for="middlename">Отчество:</label>
+                <input type="text" name="middlename" id="middlename" />
+            </p>
+            <p>
+                <label for="p">Ваш пароль:</label>
+                <input type="password" name="psw" id="p" required>
+            </p>
+
+            <p>
+                <label>Укажите пол</label>
+                <input type="button" name="sex" value="мужской">
+                <input type="button" name="sex" value="женский">
+            </p>
+            <p>
+                <label>Введите дату рождения</label>
+                <input type="number" value="day" min="1" max="31">
+                <input type="number" value="month" min="1" max="12">
+                <input type="number" value="year" min="1950" max="2018">
+                <br>
+            </p>
+            <p>
+                <label for="emailAlt">Альтернативные Email:</label>
+                <input type="text" name="emailAlt" id="emailAlt" />
+            </p>
+            <p>
+                <label for="email">* Email:</label>
+                <input type="text" name="email" id="email" />
+            </p>
+            <p class="submit">
+                <button type="submit">Сохранить</button>
+            </p>
+        </form>
+</body>
+
+</html>

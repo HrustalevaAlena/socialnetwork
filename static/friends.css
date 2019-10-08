@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#sidebar {
+    font-family: cursive;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #0a3d61;
+    left: -200px;
+    transition: all 300ms linear;
+}
+
+#sidebar.active {
+    left: 0%;
+}
+
+#sidebar h1 {
+    color: white;
+    position: center;
+    margin-bottom: 24%;
+    border-bottom: 0.5px solid white;
+    font-family: cursive;
+}
+
+#sidebar ul li img {
+    width: 15%;
+    position: relative;
+    height: 30px;
+    padding: 5%;
+}
+
+hr {
+    border: 1px solid gray;
+    border-bottom-width: 0;
+
+}
+
+#sidebar ul li a {
+    display: inline-block;
+    vertical-align: 55%;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a:focus {
+    color: white;
+    padding-left: 5%;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 112%;
+    top: 2%;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #606060;
+    margin: 2px 0px;
+}
+
+.container {
+    width: 900px;
+    padding: 50px 50px 0 290px;
+}
+
+.logo {
+    color: #606060;
+    letter-spacing: 2px;
+    line-height: 2em;
+    font-size: 24px;
+}
+
+.search input[type="text"] {
+    text-align: start;
+    padding: 10px;
+    width: 900px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    background-color: white;
+    border-radius: 4px;
+
+}
+.intro {
+    text-align: start;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    background-color: white;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
+}
+.column {
+    width: 900px;
+    text-align: right;
+}
+.intro .column h3 {
+    color: #606060;
+    text-align: left;
+    padding: 20px 0 0 200px;
+}
+
+.intro .column img {
+    float: left;
+    padding: 20px 0 20px 50px;
+}
+.column .write_a_mess:hover,
+.column .delete_friend:hover {
+    border: #606060;
+}
+
+.column .write_a_mess,
+.column .delete_friend {
+    background: white;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #27c6e6;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    color: #606060;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#sidebar {
+  font-family: cursive;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #0a3d61;
+  left: -200px;
+  transition: all 300ms linear;
+}
+
+#sidebar.active {
+  left: 0%;
+}
+
+#sidebar h1 {
+  color: white;
+  position: center;
+  margin-bottom: 24%;
+  border-bottom: 0.5px solid white;
+  font-family: cursive;
+}
+
+#sidebar ul li img {
+  width: 15%;
+  position: relative;
+  height: 30px;
+  padding: 5%;
+}
+
+hr {
+  border: 1px solid gray;
+  border-bottom-width: 0;
+
+}
+
+#sidebar ul li a {
+  display: inline-block;
+  vertical-align: 55%;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+  transition: color .5s ease, padding .5s ease;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a:focus {
+  color: white;
+  padding-left: 5%;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 112%;
+  top: 2%;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #606060;
+  margin: 2px 0px;
+}
+
+.background-profile {
+  padding: 45px 0 0 200px;
+}
+
+.background-profile img {
+  width: 100%;
+  background-size: contain;
+  height: 215px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+}
+
+#center-menu,
+#notifications {
+  list-style: none;
+  padding-left: 250px;
+  background: white;
+}
+
+#center-menu li,
+#notifications li {
+  display: inline-block;
+}
+
+#center-menu li:after,
+#notifications li:after {
+  color: #606060;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#center-menu li:last-child:after,
+#notifications li:last-child:after {
+  content: none;
+}
+
+#center-menu a,
+#notifications a {
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  position: relative;
+  padding-bottom: 15px;
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+
+#center-menu a,
+.center-menu a:visited,
+#notifications a,
+.notifications a:visited {
+  color: black;
+}
+
+#center-menu a.current,
+.center-menu a:hover,
+#notifications a.current,
+.notifications a:hover {
+  color: #9d999d;
+}
+
+#center-menu a:before,
+#center-menu a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  top: auto;
+  right: 50%;
+  bottom: 5px;
+  left: 50%;
+  background: #9d999d;
+  transition: .8s;
+}
+
+#center-menu a:hover:before,
+.center-menu .current:before {
+  left: 0;
+}
+
+#center-menu a:hover:after,
+.center-menu .current:after {
+  right: 0;
+}

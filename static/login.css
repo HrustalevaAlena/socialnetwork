@@ -1,0 +1,108 @@
+
+body {
+    font-family: sans-serif;
+    background: #0a3d61;
+}
+
+.container {
+    width: 25%;
+    padding: 5%;
+    position:  absolute;
+    top:50%;
+    left:50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background: #0a3d61;
+    text-align: center;
+    border: 6px solid white;
+    border-radius: 24px;
+}
+
+.head a{
+    display: inline;
+    text-align: auto; 
+    padding: 3px; 
+    border: hidden; 
+    color: white; 
+    font-weight: 500;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.head a:hover {
+  color: #fff;
+  background: #27c6e6;
+}
+
+hr {
+  border: 2px solid white;
+  border-bottom-width: 0;
+
+}
+
+.container input[type="email"], .container input[type="password"]{
+    position: center;
+    background: white;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    border: 3px solid white;
+    padding:4%;
+    outline:none;
+    width: 70%;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.container input[type="email"]:focus, .container input[type="password"]:focus{
+    width: 90%;
+    border-color: #27c6e6;
+}
+
+.container button[type="submit"]{
+  padding: 5%;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #27c6e6;
+    width: 60%;
+    outline:none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.container button[type="submit"]:hover{
+    background: #27c6e6;
+
+}
+.container p{
+    text-align:center;
+    font-size:small;
+    color:white;
+ }
+.container-signin p {
+  font-size: small;
+  text-align:center;
+  color:white;
+
+}
+.container-signin a {
+    font-size: small;
+    text-align: center; 
+    padding: 2px; 
+    border: hidden; 
+    color: white; 
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container-signin a:hover {
+  color: #fff;
+  background: #27c6e6;
+}

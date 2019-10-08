@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="blog.css" />
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+            <script src="index.js"></script>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Boss.Theme</h1>
+        <ul id="left-sidebar">
+            <li><img src="Favorites/home-icon.png" alt="" /><a href="index.html">Моя страница</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/blog-icon.png" alt="" /><a href="blog.html">Блог</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/friends-icon.png" alt="" /><a href="friends.html">Друзья</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/messages-icon.png" alt="" /><a href="no_page.html">Сообщения</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/notifications-icon.png" alt="" /><a href="no_page.html">Уведомления</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/settings-icon.png" alt="" /><a href="settings.html">Настройки</a>
+                <hr>
+            </li>
+            <li><img src="Favorites/logout-icon.png" alt="" /><a href="login.html">Выйти</a>
+                <hr>
+            </li>
+        </ul>
+    </div>
+    <div class="mainwrapper">
+        <div id="postarea">
+            <p>
+                <h3 class="logo">Блог</h3><br>
+                <textarea rows="10" name="postfield" id="postfield" placeholder="Введите текст..."></textarea>
+            </p>
+            <input type="text" name="link" placeholder="Вставьте ссылку на видео" />
+            <input type="button" value="Выберите файл" /><br>
+            <button type="submit" class="post-button">Опубликовать</button>
+        </div>
+        <div id="post1">
+            <h3>Йога как стиль жизни</h3>
+            <hr>
+            <img src="yoga.jpg" alt="">
+            <p> Йога означает способ жизни, который делает возможным достижение полноценного физического, духовного и
+                морального здоровья. Рациональный характер йоги находится в противоречии с религиозными обрядами и
+                догмами. Система йоги в сущности не имеет ничего общего с религией и различными верованиями. Техника
+                йоги строго обоснована. Ее применение приводит к желаемым результатам без необходимости верить в
+                сверхъестественную силу. Йога не ограничена кастой, религией, верой, расой, национальной
+                принадлежностью, возрастом, полом.</p>
+            <footer> <input type="datetime-local" value="2019-09-06T08:40"></footer>
+        </div>
+        <div id="post2">
+            <h3>Некогда райское место превратилось в руины.</h3>
+            <hr>
+            <video controls>
+                <iframe src="https://www.youtube.com/embed/SdFJmFdwt9o" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </video>
+            <p> По меньшей мере семь человек погибло после самого мощного из когда-либо зафиксированных ураганов на
+                Багамах. Полный масштаб катастрофы до сих пор неизвестен. Больше всего пострадали острова Абако и остров
+                Большая Багама – это стало отчетливо ясно после того, как были проведены съемки опустошенных стихией
+                островов с воздуха.
+
+                Ураганные ветры и мутные коричневые паводковые воды разрушили или серьезно повредили тысячи домов и
+                заперли людей на чердаках.</p>
+            <footer> <input type="datetime-local" value="2019-08-25T12:35"></footer>
+        </div>
+    </div>
+</body>
+
+</html>
